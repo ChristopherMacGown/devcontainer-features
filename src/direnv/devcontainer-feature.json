@@ -1,0 +1,35 @@
+{
+    "name": "direnv",
+    "id": "direnv",
+    "version": "1.0.0",
+    "description": "Installs direnv, which augments shells to load an unload environment variables depending on the current directory",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Either the latest version or a specific release."
+        },
+        "architecture": {
+            "type": "string",
+            "proposals": [
+                "i386",
+                "amd64",
+                "arm",
+                "arm64"
+            ],
+            "default": "amd64",
+            "description": "The CPU architecture for the direnv release."
+        },
+        "installPath": {
+            "type": "string",
+            "default": "/usr/local/bin/direnv",
+            "description": "The path where direnv will be installed."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
