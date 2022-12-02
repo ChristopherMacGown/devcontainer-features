@@ -1,0 +1,52 @@
+{
+    "name": "mcfly",
+    "id": "mcfly",
+    "version": "1.0.0",
+    "description": "Installs mcfly, which replaces your shell history with an intelligent search engine.",
+    "options": {
+        "architecture": {
+            "type": "string",
+            "proposals": [
+                "aarch64",
+                "arm",
+                "arm7",
+                "i686",
+                "x86_64",
+            ],
+            "default": "x86_64",
+            "description": "The CPU architecture for the mcfly release."
+        },
+        "autoEnable": {
+            "type": "boolean",
+            "default": "true",
+            "description": "Automatically enable mcfly for bash, zsh, and fish shells."
+        },
+        "installPath": {
+            "type": "string",
+            "default": "/usr/local/bin/mcfly",
+            "description": "The path where mcfly will be installed."
+        },
+        "libc": {
+            "type": "string",
+            "proposals": [
+                "gnu",
+                "gnueabi",
+                "gnueabihf",
+                "musl"
+            ],
+            "default": "musl",
+            "description": "The GLIBC of the mcfly binary."
+        },
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+            ],
+            "default": "latest",
+            "description": "Either the latest version or a specific release."
+        },
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
