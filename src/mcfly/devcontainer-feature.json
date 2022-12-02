@@ -44,7 +44,7 @@
             ],
             "default": "latest",
             "description": "Either the latest version or a specific release."
-        },
+        }
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
