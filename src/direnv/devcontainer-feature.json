@@ -1,17 +1,9 @@
 {
     "name": "direnv",
     "id": "direnv",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs direnv, which augments shells to load an unload environment variables depending on the current directory",
     "options": {
-        "version": {
-            "type": "string",
-            "proposals": [
-                "latest"
-            ],
-            "default": "latest",
-            "description": "Either the latest version or a specific release."
-        },
         "architecture": {
             "type": "string",
             "proposals": [
@@ -23,10 +15,23 @@
             "default": "amd64",
             "description": "The CPU architecture for the direnv release."
         },
+        "autoEnable": {
+            "type": "boolean",
+            "default": "true",
+            "description": "Automatically enable mcfly for bash, zsh, and fish shells."
+        },
         "installPath": {
             "type": "string",
             "default": "/usr/local/bin/direnv",
             "description": "The path where direnv will be installed."
+        },
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Either the latest version or a specific release."
         }
     },
     "installsAfter": [
