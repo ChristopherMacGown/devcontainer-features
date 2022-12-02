@@ -15,9 +15,10 @@ Installs direnv, which augments shells to load an unload environment variables d
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Either the latest version or a specific release. | string | latest |
 | architecture | The CPU architecture for the direnv release. | string | amd64 |
+| autoEnable | Automatically enable mcfly for bash, zsh, and fish shells. | boolean | true |
 | installPath | The path where direnv will be installed. | string | /usr/local/bin/direnv |
+| version | Either the latest version or a specific release. | string | latest |
 
 
 
