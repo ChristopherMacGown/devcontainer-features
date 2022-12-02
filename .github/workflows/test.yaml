@@ -14,6 +14,7 @@ jobs:
       matrix:
         features:
           - mcfly
+          - direnv
         baseImage:
           - debian:latest
           - ubuntu:latest
