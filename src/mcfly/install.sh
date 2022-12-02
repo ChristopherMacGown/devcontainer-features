@@ -29,10 +29,10 @@ if [ "${AUTO_ENABLE}" = "true" ]; then
 
     echo "Adding mcfly to ${BASHRC} and ${ZSHRC}"
     if [ -z "$(grep \"mcfly init bash\" ${BASHRC})" ]; then
-        echo -e "eval \$(mcfly init bash)" >>${BASHRC}
+        echo -e "eval \"\$(mcfly init bash)\"" >>${BASHRC}
     fi
 
     if [ -z "$(grep \"mcfly init zsh\" ${ZSHRC})"]; then
-        echo -e "eval \$(mcfly init zsh)" >>${ZSHRC}
+        echo -e "eval \"\$(mcfly init zsh)\"" >>${ZSHRC}
     fi
 fi
