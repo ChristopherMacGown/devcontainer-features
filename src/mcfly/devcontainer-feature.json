@@ -1,7 +1,7 @@
 {
     "name": "mcfly",
     "id": "mcfly",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs mcfly, which replaces your shell history with an intelligent search engine.",
     "options": {
         "architecture": {
