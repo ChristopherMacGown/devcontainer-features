@@ -11,7 +11,7 @@
                 "arm",
                 "arm7",
                 "i686",
-                "x86_64",
+                "x86_64"
             ],
             "default": "x86_64",
             "description": "The CPU architecture for the mcfly release."
@@ -40,7 +40,7 @@
         "version": {
             "type": "string",
             "proposals": [
-                "latest",
+                "latest"
             ],
             "default": "latest",
             "description": "Either the latest version or a specific release."
