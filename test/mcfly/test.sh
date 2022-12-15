@@ -23,9 +23,9 @@ source dev-container-features-test-lib
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "version" bash -c "mcfly -V | grep 'McFly'"
-check "bash-integration" bash -c "cat ~/.bashrc | grep 'eval \"\$(mcfly init bash)\"'"
-check "zsh-integration" bash -c "cat ~/.zshrc | grep 'eval \"\$(mcfly init zsh)\"'"
+check "version" bash -c "mcfly -V | grep -i mcfly"
+check "bash-integration" bash -c "cat ~/.bashrc | grep 'source <(mcfly init bash)'"
+check "zsh-integration" bash -c "cat ~/.zshrc | grep 'source <(mcfly init zsh)'"
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.

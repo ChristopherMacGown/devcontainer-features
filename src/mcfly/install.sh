@@ -50,10 +50,12 @@ if [ "${AUTO_ENABLE}" = "true" ]; then
 
     echo "Adding mcfly to ${BASHRC} and ${ZSHRC}"
     if [ -z "$(grep \"mcfly init bash\" ${BASHRC})" ]; then
-        echo -e "eval \"\$(mcfly init bash)\"" >>${BASHRC}
+        echo -e "export MCFLY_HISTFILE=\"\${HISTFILE:-\$HOME/.bash_history}\"" >>${BASHRC}
+        echo -e "source <(mcfly init bash)" >>${BASHRC}
     fi
 
     if [ -z "$(grep \"mcfly init zsh\" ${ZSHRC})"]; then
-        echo -e "eval \"\$(mcfly init zsh)\"" >>${ZSHRC}
+        echo -e "export MCFLY_HISTFILE=\"\${HISTFILE:-\$HOME/.zsh_history}\"" >>${ZSHRC}
+        echo -e "source <(mcfly init zsh)" >>${ZSHRC}
     fi
 fi
