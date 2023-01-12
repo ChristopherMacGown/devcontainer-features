@@ -18,7 +18,7 @@
         },
         "autoEnable": {
             "type": "boolean",
-            "default": "true",
+            "default": true,
             "description": "Automatically enable mcfly for bash, zsh, and fish shells."
         },
         "installPath": {
