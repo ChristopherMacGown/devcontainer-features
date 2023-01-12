@@ -47,3 +47,18 @@ environment variables based on the current working directory.
 ```
 
 Additional options can be found in the [feature documentation](src/direnv/README.md).
+
+
+### minio-client
+
+[minio-client](https://min.io/docs/minio/linux/reference/minio-mc.html) is an AWS S3
+compatible client for S3 and Minio. 
+
+#### usage
+```json 
+"features": {
+    "ghcr.io/ChristopherMacGown/devcontainer-features/minio-client:1": {}
+}
+```
+
+Additional options can be found in the [feature documentation](src/minio-client/README.md).
