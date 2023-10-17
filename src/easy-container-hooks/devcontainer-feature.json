@@ -1,0 +1,41 @@
+{
+    "name": "easy-container-hooks",
+    "description": "Shell runner that executes hooks in your .devcontainer/hooks/ directory.",
+    "options": {
+        "hooksDir": {
+            "description": "",
+            "type": "string",
+            "default": ".devcontainer/hooks"
+        },
+        "onCreateHookPath": {
+            "description": "",
+            "type": "string",
+            "default": "on-create"
+        },
+        "postAttachHookPath": {
+            "description": "",
+            "type": "string",
+            "default": "post-attach"
+        },
+        "postCreateHookPath": {
+            "description": "",
+            "type": "string",
+            "default": "post-create"
+        },
+        "postStartHookPath": {
+            "description": "",
+            "type": "string",
+            "default": "post-start"
+        },
+        "updateContentHookPath": {
+            "description": "",
+            "type": "string",
+            "default": "update-content"
+        }
+    },
+    "onCreateCommand" :     ["/usr/local/bin/ezdc_onCreate.sh"],
+    "postCreateCommand":    ["/usr/local/bin/ezdc_postCreate.sh"],
+    "postStartCommand":     ["/usr/local/bin/ezdc_postStart.sh"],
+    "postAttachCommand":    ["/usr/local/bin/ezdc_postAttach.sh"],
+    "updateContentCommand": ["/usr/local/bin/ezdc_updateContent.sh"]
+}

@@ -1,0 +1,26 @@
+{
+    "changed_hooks_dir": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "easy-container-hooks": {
+                "hooksDir": ".devcontainer/skooh/"
+            }
+        }
+    },
+    "changed_oncreatehook_dir": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "easy-container-hooks": {
+                "onCreateHookPath": "create-on"
+            }
+        }
+    },
+    "changed_postcreatehook_dir": {
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
+        "features": {
+            "easy-container-hooks": {
+                "postCreateHookPath": "create-post"
+            }
+        }
+    }
+}
