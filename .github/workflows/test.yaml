@@ -12,9 +12,7 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        features:
-          - mcfly
-          - direnv
+        features: ["easy-container-hooks", "direnv", "mcfly", "minio-client"]
         baseImage:
           - debian:latest
           - ubuntu:latest

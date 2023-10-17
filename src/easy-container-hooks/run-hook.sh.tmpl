@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail
+
+HOOKS=#####REPLACE######
+WORKSPACE_DIR=$(pwd);
+WORKSPACE_HOOKS=${WORKSPACE_DIR}/${HOOKS};
+for HOOK in $(ls ${WORKSPACE_HOOKS}); do 
+    env WORKSPACE_DIR=${WORKSPACE_DIR} bash "${WORKSPACE_HOOKS}/${HOOK}"
+done
+

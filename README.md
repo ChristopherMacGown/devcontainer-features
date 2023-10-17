@@ -45,8 +45,19 @@ environment variables based on the current working directory.
     "ghcr.io/ChristopherMacGown/devcontainer-features/direnv:1": {}
 }
 ```
-
 Additional options can be found in the [feature documentation](src/direnv/README.md).
+
+
+### easy-container-hooks
+This is a cross-distribution devcontainer feature that installs static script runners to /usr/local/bin that will execute scripts located in your devcontainer's local hooks directory.
+
+#### usage
+```json
+"features": {
+    "ghcr.io/ChristopherMacGown/devcontainer-feautres/easy-container-hooks:1":{}
+}
+```
+Additional options can be found in the [feature documentation](src/easy-container-hooks/README.md).
 
 
 ### minio-client
