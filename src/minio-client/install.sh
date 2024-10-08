@@ -21,11 +21,11 @@ set -e
 export MINIO_PATH=${INSTALLPATH:-"/usr/local/bin/mc"}
 export MINIO_VENDOR=${VENDOR:-"linux"}
 
-if -z "${ARCHITECTURE+x}"
+if [ -z "${ARCHITECTURE+x}" ]
 then
     case `uname -m` in
         aarch64)
-            MINIO_ARCH=amd64;;
+            MINIO_ARCH=arm64;;
         *)
             MINIO_ARCH=`uname -m`;;
     esac

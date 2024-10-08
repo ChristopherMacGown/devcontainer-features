@@ -1,7 +1,7 @@
 {
     "name": "minio-client",
     "id": "minio-client",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Installs the minio client",
     "options": {
         "installPath": {
