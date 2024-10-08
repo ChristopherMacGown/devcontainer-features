@@ -7,7 +7,7 @@ Installs the minio client
 
 ```json
 "features": {
-    "ghcr.io/ChristopherMacGown/devcontainer-features/minio-client:1": {}
+    "ghcr.io/kewne/devcontainer-features/minio-client:1": {}
 }
 ```
 
@@ -23,4 +23,4 @@ Installs the minio client
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ChristopherMacGown/devcontainer-features/blob/main/src/minio-client/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/kewne/devcontainer-features/blob/main/src/minio-client/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
