@@ -7,7 +7,7 @@ Installs the minio client
 
 ```json
 "features": {
-    "ghcr.io/ChristopherMacGown/devcontainer-features/minio-client:1": {}
+    "ghcr.io/kewne/devcontainer-features/minio-client:1": {}
 }
 ```
 
@@ -15,12 +15,12 @@ Installs the minio client
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| installPath | The path where mcfly will be installed. | string | /usr/local/bin/mc |
+| installPath | The path where minio will be installed. | string | /usr/local/bin/mc |
 | vendor | The OS vendor of the devcontainer | string | linux |
-| architecture | The CPU architecture of the devcontainer | string | amd64 |
+| architecture | The CPU architecture of the devcontainer | string | - |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ChristopherMacGown/devcontainer-features/blob/main/src/minio-client/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/kewne/devcontainer-features/blob/main/src/minio-client/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
