@@ -7,7 +7,7 @@ Shell runner that executes hooks in your .devcontainer/hooks/ directory.
 
 ```json
 "features": {
-    "ghcr.io/ChristopherMacGown/devcontainer-features/easy-container-hooks:1": {}
+    "ghcr.io/kewne/devcontainer-features/easy-container-hooks:1": {}
 }
 ```
 
@@ -26,4 +26,4 @@ Shell runner that executes hooks in your .devcontainer/hooks/ directory.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ChristopherMacGown/devcontainer-features/blob/main/src/easy-container-hooks/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/kewne/devcontainer-features/blob/main/src/easy-container-hooks/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
