@@ -7,7 +7,7 @@
         "installPath": {
             "type": "string",
             "default": "/usr/local/bin/mc",
-            "description": "The path where mcfly will be installed."
+            "description": "The path where minio will be installed."
         },
         "vendor": {
             "type": "string",
@@ -21,7 +21,7 @@
         },
         "architecture": {
             "type": "string",
-            "default": "amd64",
+            "default": "",
             "description": "The CPU architecture of the devcontainer",
             "proposals": [
                 "amd64",

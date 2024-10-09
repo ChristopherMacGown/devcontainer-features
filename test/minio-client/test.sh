@@ -24,7 +24,7 @@ source dev-container-features-test-lib
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
 check "version" bash -c "mc -v | grep -i \"mc version\""
-check "architectur" bash -c "mc -v | grep -i \"Runtime:\""
+check "architecture" bash -c "mc -v | grep -i \"Runtime:\""
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.

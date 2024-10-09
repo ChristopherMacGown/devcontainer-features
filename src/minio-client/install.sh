@@ -23,16 +23,17 @@ export MINIO_VENDOR=${VENDOR:-"linux"}
 
 if [ -z "${ARCHITECTURE+x}" ]
 then
+    MINIO_ARCH=${ARCHITECTURE}
+else
     case `uname -m` in
         aarch64)
             MINIO_ARCH=arm64;;
         *)
             MINIO_ARCH=`uname -m`;;
     esac
-else
-    MINIO_ARCH=${ARCHITECTURE}
 fi
 export MINIO_ARCH
+echo "Arch is ${MINIO_ARCH}"
 
 DOWNLOAD_PATH="https://dl.min.io/client/mc/release/${MINIO_VENDOR}-${MINIO_ARCH}/"
 
