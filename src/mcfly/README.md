@@ -7,7 +7,7 @@ Installs mcfly, which replaces your shell history with an intelligent search eng
 
 ```json
 "features": {
-    "ghcr.io/kewne/devcontainer-features/mcfly:1": {}
+    "ghcr.io/ChristopherMacGown/devcontainer-features/mcfly:1": {}
 }
 ```
 
@@ -25,4 +25,4 @@ Installs mcfly, which replaces your shell history with an intelligent search eng
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/kewne/devcontainer-features/blob/main/src/mcfly/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ChristopherMacGown/devcontainer-features/blob/main/src/mcfly/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
