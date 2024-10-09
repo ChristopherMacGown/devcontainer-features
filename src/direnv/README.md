@@ -7,7 +7,7 @@ Installs direnv, which augments shells to load an unload environment variables d
 
 ```json
 "features": {
-    "ghcr.io/kewne/devcontainer-features/direnv:1": {}
+    "ghcr.io/ChristopherMacGown/devcontainer-features/direnv:1": {}
 }
 ```
 
