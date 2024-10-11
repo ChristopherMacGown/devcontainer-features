@@ -28,6 +28,8 @@ else
     case `uname -m` in
         aarch64)
             MINIO_ARCH=arm64;;
+        x86_64)
+            MINIO_ARCH=amd64;;
         *)
             MINIO_ARCH=`uname -m`;;
     esac
