@@ -15,9 +15,9 @@ Installs the minio client
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| installPath | The path where mcfly will be installed. | string | /usr/local/bin/mc |
+| installPath | The path where minio will be installed. | string | /usr/local/bin/mc |
 | vendor | The OS vendor of the devcontainer | string | linux |
-| architecture | The CPU architecture of the devcontainer | string | amd64 |
+| architecture | The CPU architecture of the devcontainer | string | - |
 
 
 
