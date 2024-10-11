@@ -20,7 +20,22 @@ set -e
 
 export MINIO_PATH=${INSTALLPATH:-"/usr/local/bin/mc"}
 export MINIO_VENDOR=${VENDOR:-"linux"}
-export MINIO_ARCH=${ARCHITECTURE:-"amd64"}
+
+if [ -z "${ARCHITECTURE+x}" ]
+then
+    MINIO_ARCH=${ARCHITECTURE}
+else
+    case `uname -m` in
+        aarch64)
+            MINIO_ARCH=arm64;;
+        x86_64)
+            MINIO_ARCH=amd64;;
+        *)
+            MINIO_ARCH=`uname -m`;;
+    esac
+fi
+export MINIO_ARCH
+echo "Arch is ${MINIO_ARCH}"
 
 DOWNLOAD_PATH="https://dl.min.io/client/mc/release/${MINIO_VENDOR}-${MINIO_ARCH}/"
 
